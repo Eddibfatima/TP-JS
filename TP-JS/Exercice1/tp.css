@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(180, 224, 244);
+    
+}
+div{
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+   
+}
+h2{
+   color: white;
+    font-size: 50px;
+}
+img{
+    width: 300px;
+    height: 300px;
+}

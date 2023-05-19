@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        var jour = date.getDate();
+        var mois = date.getMonth() + 1;
+        var annee = date.getFullYear();
+        if (jour < 10) {
+        jour = '0' + jour;
+        }
+        if (mois < 10) {
+        mois = '0' + mois;
+        }
+        console.log("On est le " + 24 + "/" + 12 + "/" + 2013);
+    </script>
+</body>
+</html>

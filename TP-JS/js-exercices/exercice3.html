@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>convertir en Dirhams </title>
+    <script>
+        function convertir() {
+          var montantEuros = parseFloat(document.getElementById('montantEuros').value);
+          if (isNaN(montantEuros)) {
+            alert('Veuillez saisir un montant valide en euros.');
+            return;
+          }
+          var tauxDeChange = 10.5; 
+          var montantDirhams = montantEuros * tauxDeChange;
+          document.getElementById('montantDirhams').value = montantDirhams.toFixed(2);
+        }
+      </script>
+</head>
+<body>
+    <h1>Convertir en Dirhams</h1>
+    <form>
+      <label for="montantEuros">Montant en Euros :</label>
+      <input type="text" id="montantEuros" />
+      <button type="button" onclick="convertir()">Convertir</button>
+    </form>
+    <br />
+    <label for="montantDirhams">Montant en Dirhams :</label>
+    <input type="text" id="montantDirhams" readonly />
+    
+</body>
+</html>

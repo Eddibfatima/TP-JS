@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inverse</title>
+</head>
+<body>
+    <script>
+        function convertirEnHMS(totalSecondes) {
+            var heures = Math.floor(totalSecondes / 3600);
+            var minutes = Math.floor((totalSecondes % 3600) / 60);
+            var secondes = totalSecondes % 60;
+          
+            return {
+              heures: heures,
+              minutes: minutes,
+              secondes: secondes
+            };
+          }
+          var totalSecondes = 26801;
+          var resultat = convertirEnHMS(totalSecondes);
+          console.log(resultat);
+    </script>
+</body>
+</html>

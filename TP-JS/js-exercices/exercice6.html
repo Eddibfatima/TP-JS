@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Saisir le numéro d'un mois</title>
+</head>
+<body>
+    <script>
+        function nombreDeJoursDansMois(mois) {
+            if (mois >= 1 && mois <= 12) {
+              switch (mois) {
+                case 1: 
+                case 3: 
+                case 5: 
+                case 7:
+                case 8:
+                case 10: 
+                case 12: 
+                  return 31;
+                case 4:
+                case 6: 
+                case 9: 
+                case 11: 
+                  return 30;
+                case 2:
+                  return 28;
+              }
+            }
+            return -1; 
+          }
+          var mois = parseInt(prompt("Saisissez le numéro d'un mois (entre 1 et 12) :"));
+          var nombreJours = nombreDeJoursDansMois(mois);
+          if (nombreJours === -1) {
+            console.log("Numéro de mois invalide !");
+          } else {
+            console.log("Le mois " + mois + " a " + nombreJours + " jours.");
+          }
+    </script>
+</body>
+</html>
